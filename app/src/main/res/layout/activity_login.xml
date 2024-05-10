@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Linear Layout with vertical orientation and other properties -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EnterApp.LoginActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/appTitleSpotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="serif"
+        android:paddingStart="50dp"
+        android:paddingTop="50dp"
+        android:text="Spotify"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/gold"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appTitleWrapped"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appTitleSpotify"
+        android:fontFamily="casual"
+        android:gravity="end"
+        android:paddingEnd="50dp"
+        android:text="Wrapped"
+        android:textColor="@color/gold"
+        android:textSize="40sp" />
+
+    <!-- Content LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:layout_below="@id/appTitleWrapped">
+
+        <!-- TextView for heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Login"
+            android:textColor="@color/gold"
+            android:textSize="20sp" />
+
+        <!-- Edit text for email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_top"
+            android:hint="Enter your Email"
+            android:paddingLeft="16dp"
+            android:minHeight="48dp" />
+
+        <!-- Edit text for password -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_bottom"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp" />
+
+        <!-- Button for Login with text "Login" -->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gold"
+            android:layout_marginBottom="16dp"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/goSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gold"
+            android:text="Sign up" />
+
+        <!-- ProgressBar for Loading Time -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/gold"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

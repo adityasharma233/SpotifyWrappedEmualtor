@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1096266036710",
+    "project_id": "spotify2340-f6364",
+    "storage_bucket": "spotify2340-f6364.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096266036710:android:19b821c8c7e5650fbe1227",
+        "android_client_info": {
+          "package_name": "com.example.cs2340_project2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuYedkV9dX1azZbHlM1LSZcjArJcEobPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
